@@ -1,0 +1,61 @@
+G = {V, T, P, S}
+
+V = {S, X, Y , A, B, F}
+T = {a, b}
+P = {S -> XY, 
+X -> XaA | XbB | F 
+Aa -> aA, Ab -> bA, AY -> Ya,
+Ba -> aB, Bb -> bB, BY -> Yb,
+Fa -> aF, Fb -> bF, FY -> e
+}
+
+baba
+
+S
+XY
+XaAY
+XaYa
+XbBaYa
+XbaBYa
+XbaYba
+FbaYba
+FbaYba
+bFaYba
+baFYba
+baba
+
+V=  {   SENTENÇA, SUJEITO, PREDICADO, OBJETO, ARTIGO, ADJETIVO, SUBSTANTIVO, VERBO}
+
+T=  {   estudante, aluno, menina, menino, o, a, aprende, assiste, lê, joga, curioso, curiosa, esforçado, esforçada, bom, dedicado, dedicada, ...}
+
+P=  { SETENÇA -> SUJEITO PREDICADO, 
+    SUJEITO -> ARTIGO ADJETIVO SUBSTANTIVO 
+    PREDICADO -> VERBO OBJETO
+    OBJETO -> ARTIGO ADJETIVO SUBSTANTIVO
+    ARTIGO -> o | a
+    ADJETIVO -> curioso | curiosa | esforçado | esforçada | ...
+    SUBSTANTIVO -> estudante | aluno | menino | menina}
+
+S = {SENTENÇA}
+
+S
+SENTENÇA
+SUJEITO PREDICADO
+SUJEITO -> ARTIGO ADJETIVO SUBSTANTIVO 
+ARTIGO ADJETIVO SUBSTANTIVO PREDICADO
+ARTIGO -> a 
+a ADJETIVO SUBSTANTIVO PREDICADO
+ADJETIVO -> curiosa
+a curiosa SUBSTANTIVO PREDICADO
+SUBSTANTIVO -> estudante
+a curiosa estudante PREDICADO
+PREDICADO -> VERBO OBJETO
+a curiosa estudante VERBO OBJETO
+VERBO -> aprende
+a curiosa estudante aprende OBJETO
+OBJETO -> ARTIGO ADJETIVO SUBSTANTIVO
+a curiosa estudante aprende ARTIGO ADJETIVO SUBSTANTIVO
+ARTIGO -> a
+a curiosa estudante aprende a ADJETIVO SUBSTANTIVO
+
+
